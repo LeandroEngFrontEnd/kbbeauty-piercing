@@ -98,8 +98,6 @@ img {
 }
 
 .btn-produtos {
-
-
     background: linear-gradient(to right, #932b70 0%, #b91863 100%);
     border: none;
     outline: none;
@@ -111,7 +109,7 @@ img {
     outline: none;
     color: var(--light-color);
     display: inline-block;
-    margin: 0 auto;
+    margin: 0.5rem auto;
     transition: all 0.4s ease-in-out;
 }
 
@@ -408,6 +406,10 @@ img {
     margin-top: 0.2rem;
 }
 
+.chefs .kaka {
+    font-size: 1.2rem;
+}
+
 .about__data {
     margin-top: var(--mb-4);
     background-color: var(--light-color);
@@ -541,6 +543,8 @@ img {
 
 /*----------CONTATO---------*/
 .contato__container {
+    display: flex;
+    justify-content: center;
     padding: 1rem 2rem;
 }
 
@@ -569,22 +573,27 @@ img {
     display: flex;
     justify-content: space-around;
 }
+.contato__form{
+    background-color: b;
+}
 
 .contato__form .contato__title {
     text-align: center;
+    justify-content: center;
 }
 
-.form-control {
+form {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.form-control label {
+form label {
     font-size: var(--small-font-size);
 }
 
-.form-control input,
+
+form input,
 textarea {
     font-size: var(--normal-font-size);
     padding: 0.5rem 1rem;
@@ -594,17 +603,18 @@ textarea {
     margin-bottom: var(--mb-2);
 }
 
-.form-control textarea {
+form textarea {
     resize: none;
     outline: none;
     margin-bottom: var(--mb-6);
 }
 
-.form-control button {
+form-control button {
     position: absolute;
     right: 0;
     bottom: 0;
 }
+
 
 /*---------COMPARTILHAR-----------*/
 .compartilhar {
@@ -666,8 +676,21 @@ textarea {
 .info,
 .addres {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin-bottom: var(--mb-5);
+}
+
+.services-image{
+    display: flex;
+    align-items: center;
+}
+
+.services-image img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .company .logo {
@@ -701,6 +724,11 @@ textarea {
     text-decoration: underline;
 }
 
+.footer{
+    background-color: pink;
+margin-top: 3rem;
+}
+
 .footer p {
     font-size: var(--small-font-size);
     color: var(--text-color);
@@ -731,9 +759,6 @@ compart .footer__title {
     .cardapio__container {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
-    }
-
-    .contato__form {
         margin-bottom: var(--mb-6);
     }
 
@@ -851,9 +876,7 @@ compart .footer__title {
         margin-top: var(--mb-2);
     }
 
-    .form-control button {
-        bottom: -.5rem;
-    }
+  
 
     .footer__container {
         padding: 0;
@@ -951,15 +974,15 @@ compart .footer__title {
 
 
 /*produtos*/
-.produto{
-margin-top: 1rem;
+.produto {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-.produto img:hover{
+.produto img:hover {
     border-radius: 8px;
     transform: scale(1.1);
     transition: 0.4s;
@@ -971,4 +994,3 @@ margin-top: 1rem;
     text-align: center;
     align-items: center;
 }
-
