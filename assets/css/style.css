@@ -12,7 +12,7 @@
     --light-color: #ffffff;
     --text-color: #171f07;
     --body-color: #ffffff;
-    --container-color: #f1fcdc;
+    --container-color: #fcdcee;
 
     /*---------------FONT  AND TYPOGRAPHY-------------------*/
     --body-font: "Lato", sans-serif;
@@ -606,7 +606,6 @@ textarea {
 form textarea {
     resize: none;
     outline: none;
-    margin-bottom: var(--mb-6);
 }
 
 form-control button {
