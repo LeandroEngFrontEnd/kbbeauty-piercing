@@ -12,7 +12,7 @@
     --light-color: #ffffff;
     --text-color: #171f07;
     --body-color: #ffffff;
-    --container-color: #fcdcee;
+    --container-color: #fcdce8;
 
     /*---------------FONT  AND TYPOGRAPHY-------------------*/
     --body-font: "Lato", sans-serif;
@@ -371,6 +371,8 @@ img {
 
 /*------------SOBRE---------------*/
 .about__container {
+    border-radius: 10px;
+    box-shadow: 0px 25px 55px rgb(104, 41, 51);
     background-color: pink;
     padding: 0 2rem;
 }
